@@ -4,7 +4,7 @@
 4. Click “Get from VCS”
 <img width="798" alt="1" src="https://user-images.githubusercontent.com/63912318/175625027-130f2df3-884a-40b1-8397-5506a4584b45.png">
 
-5. Insert in URL field
+5. Insert https://github.com/igor-stepik/best-movie-check.git in URL field
 <img width="792" alt="Get from Version Control" src="https://user-images.githubusercontent.com/63912318/175625599-1c0bbe26-8f04-4630-b56d-885d84dd171b.png">
 
 6. Click Clone
