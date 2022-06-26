@@ -1,16 +1,20 @@
-package com.imdb;
+package com.imdb.test;
 
-import com.imdb.pages.MainPage;
-import com.imdb.pages.TopMoviesPage;
+import com.imdb.WebDriverConfig;
+import imdb.pages.MainPage;
+import imdb.pages.TopMoviesPage;
 import org.testng.annotations.Test;
+
+
+
 
 public class TestGodFatherTheBest extends WebDriverConfig {
 
     @Test
-    public void testOpening() throws InterruptedException {
+    public void testOpening() {
         MainPage mainPage = new MainPage(driver);
 
-        mainPage.open();
+        mainPage.openMainPage();
         mainPage.navigateToTopMoviesPage();
     }
 

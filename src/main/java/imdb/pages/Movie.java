@@ -1,4 +1,4 @@
-package com.imdb;
+package imdb.pages;
 
 public class Movie {
         String year;
