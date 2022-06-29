@@ -14,10 +14,8 @@ public class WebDriverConfig {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-//        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
-//        driver = new ChromeDriver();
 //        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        System.out.println("СТАРТУЕМ");
+        System.out.println("СТАРТУЕМ");
 
 
     }
