@@ -1,4 +1,4 @@
-1. Download and install IDEA https://www.jetbrains.com/idea/download according to your Operation System
+1. Download and install IDEA https://www.jetbrains.com/idea/download  according to your Operation System
 2. Open IDEA
 3. Click “Get from VCS”
 <img width="798" alt="1" src="https://user-images.githubusercontent.com/63912318/175625027-130f2df3-884a-40b1-8397-5506a4584b45.png">
