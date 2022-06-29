@@ -7,24 +7,24 @@ import org.testng.annotations.Test;
 
 
 
-
 public class TestGodFatherTheBest extends WebDriverConfig {
-
     @Test
-    public void testOpening() {
+    public void testNavigateToTopMoviesPage() {
         MainPage mainPage = new MainPage(driver);
 
         mainPage.openMainPage();
         mainPage.navigateToTopMoviesPage();
     }
 
-    @Test(dependsOnMethods = "testOpening")
+    @Test(dependsOnMethods = "testNavigateToTopMoviesPage")
     public void testMovieInTop() {
         TopMoviesPage topMoviesPage = new TopMoviesPage(driver);
 
-        topMoviesPage.CheckIsMovieInTop();
+        topMoviesPage.getTopFiveMovies();
+        topMoviesPage.checkIsGodFatherInTopFiveList();
         topMoviesPage.openGodFatherPage();
         topMoviesPage.comparingRating();
     }
 }
+
 

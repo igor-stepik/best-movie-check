@@ -10,10 +10,11 @@ import java.time.Duration;
 
 
 public class MainPage {
-    public WebDriver driver;
+    private final WebDriver driver;
 
     private final By navigationButton = By.xpath("/html/body/div[2]/nav/div[2]/label[2]/div");
     private final By topMoviesButton = By.xpath("//div //ul //a[3] [@href=\"/chart/top/?ref_=nv_mv_250\"]");
+    private final String topMoviesPageTitle = "Top 250 Movies - IMDb";
     private final String URL = "https://www.imdb.com";
 
     public MainPage(WebDriver driver) {
@@ -30,7 +31,7 @@ public class MainPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(topMoviesButton));
         driver.findElement(topMoviesButton).click();
-        String topMoviesPageTitle = driver.getTitle();
-        Assert.assertEquals(topMoviesPageTitle, "Top 250 Movies - IMDb");
+        Assert.assertEquals(driver.getTitle(), topMoviesPageTitle,
+                "FAILED NAVIGATION TO TOP 250 MOVIES LIST");
     }
 }
