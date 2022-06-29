@@ -7,9 +7,7 @@
 <img width="792" alt="Get from Version Control" src="https://user-images.githubusercontent.com/63912318/175625599-1c0bbe26-8f04-4630-b56d-885d84dd171b.png">
 
 5. Click Clone
-6. Go to best-movie-check - src - test - java - com.imdb - test
-<img width="356" alt="Project" src="https://user-images.githubusercontent.com/63912318/175626049-13ae80ad-111a-4a5a-be8a-18c38f924853.png">
-
+6. Go to best-movie-check -> src -> test -> java -> com.imdb -> test
 
 7. Click right button on TestGodFatherTheBest
 8. Run ‘TestGodFatherTheBest’
